@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Calibri'; 
+}
+header{
+    background-color: #DAF7A6;
+    text-align: center;
+    padding: 25px 0;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #696969;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+nav a:hover{
+    background-color: #000;
+    color: #fff;
+
+}
