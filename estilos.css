@@ -7,12 +7,15 @@
 body{
     font-family: 'Calibri'; 
 }
+/* CABECERA: Fondo verde y centrada */
 header{
     background-color: #DAF7A6;
     text-align: center;
     padding: 25px 0;
 }
 
+/* BARRA NAVEGACION: Letras grises, al pasar
+el cursor sombreado negro redondeado */
 nav a{
     display: inline-block;
     text-decoration: none;
@@ -24,5 +27,27 @@ nav a{
 nav a:hover{
     background-color: #000;
     color: #fff;
+}
 
+/* CABECERA: Imagen y titulo centrado */
+.encabezado-img{
+    background-image: url(images/encabezado.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* CABECERA: Tamaño parrafo */
+.encabezado-img p{
+    font-size: 20px;
+}
+
+/* CABECERA: Tamaño titulo (h1) con separación*/
+.encabezado-img h1{
+    font-size: 50px;
+    padding: 20;
 }
