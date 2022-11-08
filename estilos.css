@@ -31,7 +31,7 @@ nav a:hover{
 
 /* CABECERA: Imagen y titulo centrado */
 .encabezado-img{
-    background-image: url(images/encabezado.jpg);
+    background-image: url(images/pizarra.jpg);
     height: 400px;
     background-size: cover;
     display: flex;
