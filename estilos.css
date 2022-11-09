@@ -61,6 +61,7 @@ nav a:hover{
     padding: 20;
 }
 
+/* BOTON*/
 button{
     width: 200px;
     padding: 15px 0;
@@ -71,4 +72,28 @@ button{
     background: transparent;
     color: #fff;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BOTON: Al ponernos encima, el color se rellena a verde
+con una transición de izquierda a derecha*/
+span{
+    background: #4BFFA5;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+/* BOTON: Fondo transparente con marco verde*/
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
 }
