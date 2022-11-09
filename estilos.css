@@ -23,6 +23,8 @@ nav a{
     margin: 0 30px;
     padding: 5px 15px;
     border-radius: 30px;
+    /*Borde redondo*/
+    /*border: 2px solid #696969;*/
 }
 nav a:hover{
     background-color: #000;
