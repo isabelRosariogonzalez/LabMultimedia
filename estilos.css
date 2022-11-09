@@ -33,7 +33,6 @@ nav a:hover{
 
 /* CABECERA: Imagen y titulo centrado */
 .encabezado-img{
-
     width: 100%;
     height: 100vh;
     background-image: 
@@ -45,14 +44,17 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     color: #fff;
+    
 
 }
-
+.encabezado-content{
+    width: 100%;
+    position: absolute;
+}
 /* CABECERA: Tamaño parrafo */
 .encabezado-img p{
     font-size: 20px;
 }
-
 /* CABECERA: Tamaño titulo (h1) con separación*/
 .encabezado-img h1{
     font-size: 50px;
