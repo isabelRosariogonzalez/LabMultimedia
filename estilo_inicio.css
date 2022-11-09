@@ -8,15 +8,16 @@ body{
     font-family: 'Calibri'; 
 }
 /* CABECERA: Fondo verde y centrada */
-header{
+.barra_navegacion{
     background-color: #4BFFA5;
     text-align: center;
     padding: 25px 0;
 }
 
+
 /* BARRA NAVEGACION: Letras grises, al pasar
 el cursor sombreado negro redondeado */
-nav a{
+.item_barra{
     display: inline-block;
     text-decoration: none;
     color: #696969;
@@ -26,7 +27,7 @@ nav a{
     /*Borde redondo*/
     /*border: 2px solid #696969;*/
 }
-nav a:hover{
+.item_barra:hover{
     background-color: #000;
     color: #fff;
 }
