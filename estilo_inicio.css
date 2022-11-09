@@ -7,14 +7,14 @@
 body{
     font-family: 'Calibri'; 
 }
-/* CABECERA: Fondo verde y centrada */
+
+
+/* BARRA NAVEGACION: Fondo verde y centrada */
 .barra_navegacion{
     background-color: #4BFFA5;
     text-align: center;
     padding: 25px 0;
 }
-
-
 /* BARRA NAVEGACION: Letras grises, al pasar
 el cursor sombreado negro redondeado */
 .item_barra{
@@ -34,8 +34,8 @@ el cursor sombreado negro redondeado */
 
 
 
-/* CABECERA: Imagen y titulo centrado */
-.encabezado-img{
+/* INICIO: Imagen y titulo centrado */
+.inicio-img{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),
@@ -50,16 +50,46 @@ el cursor sombreado negro redondeado */
     
 
 }
-.encabezado-content{
+
+.inicio-navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inicio-navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.inicio-navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.inicio-navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #4BFFA5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.inicio-content{
     width: 100%;
     position: absolute;
 }
-/* CABECERA: Tamaño parrafo */
-.encabezado-img p{
+/* INICIO: Tamaño parrafo */
+.inicio-img p{
     font-size: 20px;
 }
-/* CABECERA: Tamaño titulo (h1) con separación*/
-.encabezado-img h1{
+/* INICIO: Tamaño titulo (h1) con separación*/
+.inicio-img h1{
     font-size: 50px;
     padding: 20;
 }
