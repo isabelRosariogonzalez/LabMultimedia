@@ -131,3 +131,40 @@ button:hover{
     background-color: #4BFFA5;
     color: #696969;
 }
+
+
+/* PIE DE PÁGINA */
+.pie-pagina{
+    width: 100%;
+    background-color: #373D3A;
+    color: #fff;
+}
+/* Dividimos en dos columnas */
+.grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+/* Imagenes centradas */
+.box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
+.box figure img{
+    align-items: flex-start;
+    width: 80px;
+    
+}
+.pie-pagina .grupo-2{
+    padding: auto;
+    text-align: center;
+    background-color: #282C2A;
+}
