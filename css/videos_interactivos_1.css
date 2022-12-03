@@ -3,15 +3,46 @@
 		CON UNA BARRA PARA SUBIR Y BAJAR 
 */
 .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: .5rem 1rem;
+    /*
     width: 100vw;
 
     display: grid;
     grid-template-columns: 1.8fr 1.2fr;
     gap: 1rem;
     
+    margin-top: 20px;
+    margin-bottom: 100px;
     padding: .5rem 1rem;
     text-transform: capitalize;
+    */
 }
+
+.container .main-video, .video-playlist{
+    align-self: flex-start;
+}
+.container .main-video .title{
+    margin: 15px;
+    align-items: baseline;
+}
+
+.container .main-video{
+	height: auto;
+	width: 100%;
+	border-radius: 8px;
+}
+
+.container .video-playlist .title{
+    margin: 15px;
+    align-items: baseline;
+}
+
 
 @media screen and (max-width: 990px) {
     .container {
@@ -28,13 +59,10 @@
     margin-top: 1rem;
 }
 
-.video-playlist .title {
-    padding-left: 1rem;
-}
+
 
 .video-playlist > p {
     padding: 1rem;
-    color: var(--secondary);
 }
 
 .video-playlist .videos{
@@ -50,7 +78,7 @@
 
 .video-playlist .videos::-webkit-scrollbar-thumb {
     border-radius: .4rem;
-    background-color: #fff;
+    background-color: #000;
 }
 
 .video-playlist .videos .video {
@@ -112,3 +140,83 @@
     font: 100 1rem sans-serif;
     padding: 0 .5rem;
 }
+
+
+
+.container2 {
+    width: 100vw;
+
+    display: grid;
+    /* grid-template-columns: 1.8fr 1.2fr; */
+    gap: 1rem;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    padding: .5rem 1rem;
+    text-transform: capitalize;
+}
+
+/* @media screen and (max-width: 1500px) {
+    .container2 {
+        grid-template-columns: 1fr;
+    }
+} */
+
+@media screen and (min-width: 600px) {
+    .container2 {
+      position: relative;
+    }
+      
+  .container2 .barra-seleccion .enlace-btn{
+    position: absolute;
+    width: 40%;
+  }
+}
+
+/* BOTON*/
+.container2 .barra-seleccion .enlace-btn{
+    width: 210px;
+    padding: 15px 25px;
+
+    text-align: center;
+    text-decoration: none;
+    margin: 30 20px;
+    border-radius: 30px;
+    /* border: 2px solid #4BFFA5;*/
+    color: rgb(18, 17, 17);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; 
+    background-color: #4BFFA5;
+    text-decoration: none;
+}
+
+
+
+.enlace-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* BOTON: Al ponernos encima, el color se rellena a verde
+con una transición de izquierda a derecha*/
+span{
+    background: #4BFFA5;
+    height: 100%;
+    width: 0%;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.barra-seleccion .enlace-btn{
+    width: 30px;
+    padding: 30px 30;
+    text-align: center;
+    margin: 10px 10px;
+
+}
+
