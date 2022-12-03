@@ -1,7 +1,21 @@
+/* Variables globales */
+:root{
+	/* COLORES MIOS */
+	--title-color: #fff;
+	--negrita: #000;
+}
+/* Todas las letras en blanco */
+*{
+    color: var(--title-color);
+}
+
+
+
+
 /*--------------- Reproductor: Video - Playlist ----------------------------
 		EL VIDEO SALE A LA IZQUIERDA EN GRANDE Y A LA DERECHA SALE LA PLAYLIST
 		CON UNA BARRA PARA SUBIR Y BAJAR 
-*/
+**************************************************************************/
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -10,18 +24,7 @@
     margin-top: 20px;
     margin-bottom: 100px;
     padding: .5rem 1rem;
-    /*
-    width: 100vw;
 
-    display: grid;
-    grid-template-columns: 1.8fr 1.2fr;
-    gap: 1rem;
-    
-    margin-top: 20px;
-    margin-bottom: 100px;
-    padding: .5rem 1rem;
-    text-transform: capitalize;
-    */
 }
 
 .container .main-video, .video-playlist{
@@ -30,6 +33,7 @@
 .container .main-video .title{
     margin: 15px;
     align-items: baseline;
+    color: var(--title-color);
 }
 
 .container .main-video{
@@ -41,6 +45,7 @@
 .container .video-playlist .title{
     margin: 15px;
     align-items: baseline;
+    color: var(--title-color);
 }
 
 
