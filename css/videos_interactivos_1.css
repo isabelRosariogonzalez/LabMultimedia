@@ -8,8 +8,18 @@
 *{
     color: var(--title-color);
 }
+/* Al pulsar a un botón, baja hasta la sección */
+html{
+    scroll-behavior: smooth;
+}
 
+.intro{
+    padding: 25px;
+}
 
+.tipo_1,.tipo_2,.tipo_3 h2{
+    padding: 25px;
+}
 
 
 /*--------------- Reproductor: Video - Playlist ----------------------------
