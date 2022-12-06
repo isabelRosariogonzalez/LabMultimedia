@@ -15,8 +15,8 @@ let data = [
     },
     {
         'id': 'a2',
-        'title': 'video de prueba 2',
-        'name': 'video de prueba.mp4',
+        'title': 'Five Little Monkeys',
+        'name': 'FiveLittleMonkeys.mp4',
         'duration': '2:45',
     },
     {
