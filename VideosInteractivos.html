@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VIDEOS INTERACTIVOS</title>
+
+    <link rel="stylesheet" href="estilo_inicio.css">
+    <link rel="stylesheet" href="css/playlistsVideos.css">
+
+</head>
+
+<body>
+    <header class="barra_navegacion">
+        <nav>
+            <a class="item_barra" href="index.html">Inicio</a>
+            <a class="item_barra" href="VideosInteractivos.html">Videos interactivos</a>
+            <a class="item_barra" href="PlaylistsVideos.html">Playlists</a>
+            <a class="item_barra" href="BuscadorVideos.html">Buscador de videos</a>
+            <a class="item_barra" href="AboutUs.html">Más información</a>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <h1>Video INTERACTIVOS</h1>
+        <p>Aqui tenemos varias playlists de videos videos........</p>
+        <p>selecciona una opcion.....</p>
+
+    </div>
+
+
+    <div class="container2">
+        <div class="barra-seleccion">
+            <div class="botones">
+                <a class="enlace-btn" href="#monos">Monos</a>
+                <a class="enlace-btn" href="#tipo_2">Canciones_tipo2</a>
+                <a class="enlace-btn" href="#tipo_3">Canciones_tipo3</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="monos" class="container">
+        <h2>Video quiz</h2>
+
+        <video id="myvideo" controls autoplay>
+            <source src="videos/FiveLittleMonkeys.mp4" type=video/mp4>
+        </video>
+
+        <div class="controlpanel">
+            <div class="title">Control Panel</div>
+            <button onclick="playVideo();"><b>Play</b></button>
+            <button onclick="pauseVideo();">Pause</button>
+            <button onclick="stopVideo();">Stop</button>
+            <button onclick="rewindVideo();">Restart video</button>
+
+
+        </div>
+
+        <div class="quiz_panel">
+            <div id="score">Score</div>
+            <div id="question">Question</div>
+            <div id="feedback">Feedback</div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="https://esi.uclm.es">
+                    <img class="logoESI" src="images/logoESI.png">
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.uclm.es">
+                    <img class="logoUCLM" src="images/logoUCLM.jpg">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>Sobre nosotras</h2>
+            <p>Aplicación desarrollada para el proyecto de prácticas de la
+                asignatura Multimedia</p>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <p class="copyright"> © Esther Camacho Caro e Isabel del Rosario González Vega | 2022 </p>
+    </div>
+</footer>
+
+
+</html>
