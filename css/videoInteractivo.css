@@ -1,18 +1,22 @@
-
+.section_container{
+  margin: 15px;
+}
 .container_interactivo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+  background: rgba(255, 255, 255, .15);
+  border-radius: 5%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 
     
 	
-    margin-top: 20px;
-    padding: 2rem 2rem;
-    margin-bottom: 20px;
-
-    background: #908F8F;
-    border-radius: 5%;
-    margin: 20px;
+  margin-top: 20px;
+  padding: 2rem 2rem;
+  margin-bottom: 20px;
+  
+  margin: 20px;
 
 }
 
@@ -24,8 +28,8 @@
   
 
   .container_video{
-	width: 80%;
-	border-radius: 8px;
+	  width: 80%;
+	  border-radius: 8px;
     margin-bottom: 15px;
   }
   
@@ -44,9 +48,11 @@
   }
   
   .controlpanel {
+    background: rgba(23, 23, 23, 0.2);
+    border-radius: 5%;
+
     margin: 10px;
-    border: 2px solid darkgrey;
-    background-color: khaki;
+    border: 2px solid black;
     padding: 20px;
   }
   
@@ -63,25 +69,29 @@
   }
   
   .quiz_panel {
+
+    background: rgba(23, 23, 23, 0.2);
+    border-radius: 5%;
     margin: 10px;
-    border: 2px solid darkgrey;
-    background-color: khaki;
+    border: 2px solid black;
     padding: 20px;
   }
   
   #feedback {
+    background: rgba(23, 23, 23, 0.2);
+    border-radius: 10%;
+
     border: 2px solid black;
-    background-color: khaki;
-      border-radius: 15%;
     width: 200px;
   }
   
   #score {
     border: 2px solid black;
-    background-color: blue;
+
+    background: rgba(255, 255, 255, .15);
+
     color: white;
     font-size: 24px;
-    border-radius: 15%;
     float: right;
     width: 200px;
     margin:3px;

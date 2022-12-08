@@ -11,7 +11,9 @@
 
 body{
     font-family: 'Calibri'; 
-    background: #3A3A3A;
+    background-color: #13141b;
+    background-image: url(images/bg-image.png);
+    background-size: cover;
 }
 
 

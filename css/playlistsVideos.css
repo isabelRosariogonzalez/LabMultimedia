@@ -34,6 +34,8 @@ html{
     margin-top: 20px;
     margin-bottom: 100px;
     padding: .5rem 1rem;
+    background: rgba(255, 255, 255, .15);
+    border-radius: 5%;
 
 }
 
