@@ -1,108 +1,135 @@
-.section_container{
+.section_container {
   margin: 15px;
 }
+
 .container_interactivo {
 
   background: rgba(255, 255, 255, .15);
-  border-radius: 5%;
+  border-radius: 20px;
+
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-	align-items: center;
+  grid-template-columns: 2fr 1fr;
 
-    
-	
-  margin-top: 20px;
   padding: 2rem 2rem;
-  margin-bottom: 20px;
-  
   margin: 20px;
+
+
+  /*grid-template-columns: repeat(2, 1fr);*/
+  /*align-items: center;*/
+
+
 
 }
 
-  .container_interactivo .controlpanel, .quiz_panel{
-    align-self: flex-start;
-    align-items: baseline;
-  }
+.ver-video {
+  margin: 5px;
+}
 
-  
+.container_interactivo .controlpanel,
+.quiz_panel {
+  align-self: flex-start;
+  align-items: baseline;
+}
 
-  .container_video{
-	  width: 80%;
-	  border-radius: 8px;
-    margin-bottom: 15px;
-  }
-  
-  button {
-    background-color: blue;
-    color: white;
-    border-radius: 15%;
-    box-shadow: 3px 3px 3px grey;
-    padding: 10px;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  button:hover { 
-  background-color: red;
-  }
-  
-  .controlpanel {
-    background: rgba(23, 23, 23, 0.2);
-    border-radius: 5%;
+.quiz_panel {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  align-items: center;
+}
 
-    margin: 10px;
-    border: 2px solid black;
-    padding: 20px;
-  }
-  
-  .title {
-      float: left;
-      padding: 3px;
-      border-radius: 15%;
-      color: white;
-      box-shadow: 3px 3px 3px grey;  
-      border: 2px solid darkgrey;
-      margin: -30px 0 0 0px;
-     /*background-image:url(http://static2.grsites.com/archive/textures/lgren/lgren020.jpg); */
-      background-color: green;
-  }
-  
-  .quiz_panel {
 
-    background: rgba(23, 23, 23, 0.2);
-    border-radius: 5%;
-    margin: 10px;
-    border: 2px solid black;
-    padding: 20px;
-  }
-  
-  #feedback {
-    background: rgba(23, 23, 23, 0.2);
-    border-radius: 10%;
+/*
+.container_video {
+  width: 80%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+*/
 
-    border: 2px solid black;
-    width: 200px;
-  }
-  
-  #score {
-    border: 2px solid black;
+button {
+  border: 2px solid black;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px black;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px;
+}
 
-    background: rgba(255, 255, 255, .15);
+button:hover {
+  background-color: #4BFFA5 0.2;
 
-    color: white;
-    font-size: 24px;
-    float: right;
-    width: 200px;
-    margin:3px;
-  }
-  
-  p {
-    font-family: Sans, Arial, Helvetica;
-    font-size: 16px;
-  }
-  
-  input {
-    background-color: grey;
-    border: 1px solid black;
-  }
+}
+
+.controlpanel {
+  background: rgba(23, 23, 23, 0.2);
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px black;
+
+  margin: 10px;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.title {
+  float: left;
+  padding: 3px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 3px 3px 3px black;
+  margin: -30px 0 0 0px;
+
+  border: 2px solid #4BFFA5;
+
+  /*background: #60546c;*/
+  /*background: #100c14;*/
+
+  border-radius: 20px;
+}
+
+.quiz_panel {
+
+  background: rgba(23, 23, 23, 0.2);
+  border-radius: 20px;
+  margin: 10px;
+  border: 2px solid black;
+  padding: 20px;
+  height: 170px;
+}
+
+#feedback {
+  background: rgba(23, 23, 23, 0.2);
+  border-radius: 20px;
+
+  border: 2px solid black;
+  width: 200px;
+  height: auto;
+}
+
+#score {
+  border: 2px solid black;
+
+  background: rgba(255, 255, 255, .15);
+  border-radius: 20px;
+
+  color: white;
+  font-size: 24px;
+  float: right;
+  width: 200px;
+  margin: 3px;
+}
+
+h5 {
+  font-size: 20px;
+  margin: 5px;
+}
+
+p {
+  margin: 5px;
+}
+
+input {
+  background-color: grey;
+  border: 1px solid black;
+}
