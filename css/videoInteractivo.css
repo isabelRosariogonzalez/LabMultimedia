@@ -135,3 +135,13 @@ input {
       grid-template-columns: 1fr;
   }
 }
+
+
+.seleccion-botones{
+  background: rgba(23, 23, 23, 0.1);
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px black;
+  margin: 20px;
+  border: 2px solid black;
+  padding: 20px;
+}
