@@ -3,12 +3,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 	align-items: center;
-	gap: 1.5rem;
+
+    
+	
     margin-top: 20px;
-    margin-bottom: 100px;
-    padding: .5rem 1rem;
+    padding: 2rem 2rem;
+    margin-bottom: 20px;
 
     background: #908F8F;
+    border-radius: 5%;
+    margin: 20px;
 
 }
 
@@ -17,9 +21,12 @@
     align-items: baseline;
   }
 
+  
+
   .container_video{
 	width: 80%;
 	border-radius: 8px;
+    margin-bottom: 15px;
   }
   
   button {
