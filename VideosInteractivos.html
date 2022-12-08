@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="estilo_inicio.css">
     <link rel="stylesheet" href="css/playlistsVideos.css">
+    <link rel="stylesheet" href="css/videoInteractivo.css">
 
 </head>
 
@@ -35,42 +36,110 @@
         <div class="barra-seleccion">
             <div class="botones">
                 <a class="enlace-btn" href="#monos">Monos</a>
-                <a class="enlace-btn" href="#tipo_2">Canciones_tipo2</a>
+                <a class="enlace-btn" href="#numeros">numeros</a>
                 <a class="enlace-btn" href="#tipo_3">Canciones_tipo3</a>
             </div>
         </div>
     </div>
 
-    <section id="monos" class="container">
-        <h2>Video quiz</h2>
+    
 
-        <video id="myvideo" controls autoplay>
-            <source src="videos/FiveLittleMonkeys.mp4" type=video/mp4>
-        </video>
+    <section id="monos">
 
-        <div class="controlpanel">
-            <div class="title">Control Panel</div>
-            <button onclick="playVideo();"><b>Play</b></button>
-            <button onclick="pauseVideo();">Pause</button>
-            <button onclick="stopVideo();">Stop</button>
-            <button onclick="rewindVideo();">Restart video</button>
+            <div class="container_interactivo">
+                <div class="main-video">
+                    <video src="videos/FiveLittleMonkeys.mp4" controls autoplay muted></video>
+                </div>
 
+                <div class="controlpanel">
+                    <div class="title">Control Panel</div>
+                    <button onclick="playVideo();"><b>Play</b></button>
+                    <button onclick="pauseVideo();">Pause</button>
+                    <button onclick="stopVideo();">Stop</button>
+                    <button onclick="rewindVideo();">Restart video</button>
+        
+        
+                </div>
+        
+                <div class="quiz_panel">
+                    <div id="score">Score</div>
+                    <div id="question">Question</div>
+                    <div id="feedback">Feedback</div>
+                </div>
+        
+                <script src="js/videos_interactivos/monos.js"></script>
+            </div>
 
-        </div>
-
-        <div class="quiz_panel">
-            <div id="score">Score</div>
-            <div id="question">Question</div>
-            <div id="feedback">Feedback</div>
-        </div>
+        
 
     </section>
 
 
+    <section id="numeros">
+
+        <div class="container_interactivo">
+            <div class="main-video">
+                <video src="videos/FiveLittleMonkeys.mp4" controls autoplay muted></video>
+            </div>
+
+            <div class="controlpanel">
+                <div class="title">Control Panel</div>
+                <button onclick="playVideo();"><b>Play</b></button>
+                <button onclick="pauseVideo();">Pause</button>
+                <button onclick="stopVideo();">Stop</button>
+                <button onclick="rewindVideo();">Restart video</button>
+    
+    
+            </div>
+    
+            <div class="quiz_panel">
+                <div id="score">Score</div>
+                <div id="question">Question</div>
+                <div id="feedback">Feedback</div>
+            </div>
+    
+            <script src="js/videos_interactivos/monos.js"></script>
+        </div>
+
+    
+
+</section>
 
 
 
 
+<!--
+        <section id="monos">
+        <div class="container_interactivo">
+            <div class="container_video">
+                <video id="myvideo" controls autoplay>
+                    <source src="videos/FiveLittleMonkeys.mp4" type=video/mp4>
+                </video>
+            </div>
+            
+    
+            <div class="controlpanel">
+                <div class="title">Control Panel</div>
+                <button onclick="playVideo();"><b>Play</b></button>
+                <button onclick="pauseVideo();">Pause</button>
+                <button onclick="stopVideo();">Stop</button>
+                <button onclick="rewindVideo();">Restart video</button>
+    
+    
+            </div>
+    
+            <div class="quiz_panel">
+                <div id="score">Score</div>
+                <div id="question">Question</div>
+                <div id="feedback">Feedback</div>
+            </div>
+
+            <script src="js/videos_interactivos/monos.js"></script>
+        </div>
+        
+
+    </section>
+    -->
 
 
 
