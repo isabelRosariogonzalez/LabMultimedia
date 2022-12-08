@@ -80,7 +80,7 @@ function checkAnswer(theQuestion, theInput, radioGroup){
     
     //update and display new score
     totalScore += pointsForCorrectAnswer;
-    score_div.innerHTML = "Total Points: " + totalScore;
+    score_div.innerHTML = " Puntos totales: " + totalScore;
 
     //clear the question
     question_panel.innerHTML = "";
