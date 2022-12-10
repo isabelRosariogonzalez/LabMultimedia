@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VIDEOS INTERACTIVOS</title>
+
+    <link rel="stylesheet" href="estilo_inicio.css">
+    <link rel="stylesheet" href="css/playlistsVideos.css">
+    <link rel="stylesheet" href="css/videoInteractivo.css">
+
+</head>
+
+<body>
+    <header class="barra_navegacion">
+        <nav>
+            <a class="item_barra" href="index.html">Inicio</a>
+            <a class="item_barra" href="VideosInteractivos.html">Videos interactivos</a>
+            <a class="item_barra" href="PlaylistsVideos.html">Playlists</a>
+            <a class="item_barra" href="BuscadorVideos.html">Buscador de videos</a>
+            <a class="item_barra" href="AboutUs.html">Más información</a>
+        </nav>
+        <style type="text/css"> BODY{ font-family: verdana; } </style>
+    </header>
+
+    <div class="intro">
+        <h1>Vídeos interactivos</h1>
+        <p>Aquí tenemos varias playlists de vídeos para que aprendan inglés los más pequeños</p>
+        <p>Vaya deslizando hacia abajo o use los botones para elegir un vídeo</p>
+
+    </div>
+
+
+    <div class="seleccion-botones">
+        <div class="botones">
+            <button><a  href="VideosInteractivos.html">Monos</a></button>
+            <button><a  href="VideoInteractivoNumbers.html">Numeros</a></button>
+            <button><a  href="VideoInteractivoBody.html">Cuerpo</a></button>
+            <button><a  href="VideoInteractivoFamily.html">Familia</a></button>
+        </div>
+    </div>
+
+
+    <section id="colores">
+
+        <div class="container_interactivo">
+            <div class="ver-video">
+                <video id="myvideo" src="videos/Colors.mp4" controls muted></video>
+            </div>
+
+            <div class="quiz_panel">
+                <div id="score">
+                    <h5>Puntuación: </h5>
+                </div>
+                <div id="question">
+                    <p>Pregunta</p>
+                </div>
+                <div id="feedback">
+                    <p>Respuesta</p>
+                </div>
+            </div>
+
+            <script src="js/videos_interactivos/colors.js"></script>
+        </div>
+
+    </section>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="https://esi.uclm.es">
+                        <img class="logoESI" src="images/logoESI.png">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://www.uclm.es">
+                        <img class="logoUCLM" src="images/logoUCLM.jpg">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre nosotras</h2>
+                <p>Aplicación desarrollada para el proyecto de prácticas de la
+                    asignatura Multimedia</p>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <p class="copyright"> © Esther Camacho Caro e Isabel del Rosario González Vega | 2022 </p>
+        </div>
+    </footer>
+    
+    
+    </html>

@@ -35,6 +35,7 @@
 
     <div class="seleccion-botones">
         <div class="botones">
+            <button><a  href="VideosInteractivos.html">Monos</a></button>
             <button><a  href="VideoInteractivoNumbers.html">Numeros</a></button>
             <button><a  href="VideoInteractivoColors.html">Colores</a></button>
             <button><a  href="VideoInteractivoBody.html">Cuerpo</a></button>
@@ -43,25 +44,15 @@
     </div>
 
 
-
-    <section id="monos" class="section-container">
+    <section id="numeros" class="section-container">
 
         <div class="container_interactivo">
             <div class="ver-video">
-                <video id="myvideo" src="videos/FiveLittleMonkeys.mp4" controls muted></video>
+                <video id="myvideo" src="videos/numbers.mp4" controls muted></video>
             </div>
-
-            <!--
-            <div class="controlpanel">
-                <button onclick="playVideo();"><b>Reproducir</b></button>
-                <button onclick="pauseVideo();">Pausar</button>
-                <button onclick="stopVideo();">Parar</button>
-                <button onclick="rewindVideo();">Reiniciar video</button>
-            </div>
-            -->
 
             <div class="quiz_panel">
-                <div id="score">
+                <div id="score1">
                     <h5>Puntuación: </h5>
                 </div>
                 <div id="question">
@@ -72,77 +63,10 @@
                 </div>
             </div>
 
-            <script src="js/videos_interactivos/monos.js"></script>
+            <script src="js/videos_interactivos/numbers.js"></script>
         </div>
 
     </section>
-
-
-    <!--  
-    <section id="cuerpo">
-
-        <div class="container_interactivo">
-            <div class="ver-video">
-                <video id="videoCuerpo" src="videos/bodyParts.mp4" controls muted></video>
-            </div>
-
-            <div class="quiz_panel3">
-                <div id="score3">
-                    <h5>Puntuación: </h5>
-                </div>
-                <div id="question3">
-                    <p>Pregunta</p>
-                </div>
-                <div id="feedback3">
-                    <p>Respuesta</p>
-                </div>
-            </div>
-
-            <script src="js/videos_interactivos/bodyParts.js"></script>
-        </div>
-
-    </section>
-
--->
-
-    <!--
-        <section id="monos">
-        <div class="container_interactivo">
-            <div class="container_video">
-                <video id="myvideo" controls autoplay>
-                    <source src="videos/FiveLittleMonkeys.mp4" type=video/mp4>
-                </video>
-            </div>
-            
-    
-            <div class="controlpanel">
-                <div class="title">Control Panel</div>
-                <button onclick="playVideo();"><b>Play</b></button>
-                <button onclick="pauseVideo();">Pause</button>
-                <button onclick="stopVideo();">Stop</button>
-                <button onclick="rewindVideo();">Restart video</button>
-    
-    
-            </div>
-    
-            <div class="quiz_panel">
-                <div id="score">Score</div>
-                <div id="question">Question</div>
-                <div id="feedback">Feedback</div>
-            </div>
-
-            <script src="js/videos_interactivos/monos.js"></script>
-        </div>
-        
-
-    </section>
-    -->
-
-
-
-
-
-</body>
 
 
 <footer class="pie-pagina">
