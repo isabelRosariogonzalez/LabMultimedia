@@ -9,66 +9,36 @@ const video_playlist = document.querySelector('.video-playlist .videos');
 let data = [
     {
         'id': 'a1',
-        'title': 'video de prueba',
-        'name': 'video de prueba.mp4',
-        'duration': '3:47',
+        'title': 'Five Little Monkeys',
+        'name': 'FiveLittleMonkeys.mp4',
+        'duration': '2:23',
     },
     {
         'id': 'a2',
-        'title': 'video de prueba 2',
-        'name': 'video de prueba.mp4',
-        'duration': '2:45',
+        'title': 'Friends',
+        'name': 'Friends.mp4',
+        'duration': '2:01',
     },
     {
         'id': 'a3',
-        'title': 'video de prueba 3',
-        'name': 'video de prueba.mp4',
-        'duration': '24:49',
+        'title': 'Party',
+        'name': 'Party.mp4',
+        'duration': '2:01',
     },
 
     {
         'id': 'a4',
-        'title': 'video de prueba 4',
-        'name': 'video de prueba.mp4',
-        'duration': '3:59',
+        'title': 'Trick or Treat',
+        'name': 'TrickOrTreat.mp4',
+        'duration': '1:56',
     },
     {
         'id': 'a5',
-        'title': 'video de prueba 5',
-        'name': 'video de prueba.mp4',
-        'duration': '4:25',
+        'title': 'Happy',
+        'name': 'Happy.mp4',
+        'duration': '1:37',
     },
-    {
-        'id': 'a6',
-        'title': 'video de prueba 6',
-        'name': 'video de prueba.mp4',
-        'duration': '5:33',
-    },
-    {
-        'id': 'a7',
-        'title': 'video de prueba 7',
-        'name': 'video de prueba.mp4',
-        'duration': '0:29',
-    },
-
-    {
-        'id': 'a8',
-        'title': 'video de prueba 8',
-        'name': 'video de prueba.mp4',
-        'duration': '1:12',
-    },
-    {
-        'id': 'a9',
-        'title': 'video de prueba 9',
-        'name': 'video de prueba.mp4',
-        'duration': '3:38',
-    },
-    {
-        'id': 'a10',
-        'title': 'video de prueba 10',
-        'name': 'video de prueba.mp4',
-        'duration': '3:38',
-    },
+  
 
 ];
 

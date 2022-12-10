@@ -22,54 +22,30 @@ let data = [
     },
     {
         'id': 'a3',
-        'title': 'numbers',
+        'title': 'Numbers',
         'name': 'numbers.mp4',
         'duration': '24:49',
     },
 
     {
         'id': 'a4',
-        'title': 'video de prueba 4',
-        'name': 'video de prueba.mp4',
-        'duration': '3:59',
+        'title': 'Food',
+        'name': 'Food.mp4',
+        'duration': '1:58',
     },
     {
         'id': 'a5',
-        'title': 'video de prueba 5',
-        'name': 'video de prueba.mp4',
-        'duration': '4:25',
+        'title': 'Get Dressed',
+        'name': 'GetDressed.mp4',
+        'duration': '1:54',
     },
     {
         'id': 'a6',
-        'title': 'video de prueba 6',
-        'name': 'video de prueba.mp4',
-        'duration': '5:33',
+        'title': 'Go To Bed',
+        'name': 'GoToBed.mp4',
+        'duration': '1:58',
     },
-    {
-        'id': 'a7',
-        'title': 'video de prueba 7',
-        'name': 'video de prueba.mp4',
-        'duration': '0:29',
-    },
-
-    {
-        'id': 'a8',
-        'title': 'video de prueba 8',
-        'name': 'video de prueba.mp4',
-        'duration': '1:12',
-    },
-    {
-        'id': 'a9',
-        'title': 'video de prueba 9',
-        'name': 'video de prueba.mp4',
-        'duration': '3:38',
-    },
-    {
-        'id': 'a10',
-        'title': 'video de prueba 10',
-        'name': 'video de prueba.mp4',
-        'duration': '3:38',
-    },
+    
 
 ];
 
