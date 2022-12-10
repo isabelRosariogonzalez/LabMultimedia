@@ -34,10 +34,12 @@ el cursor sombreado negro redondeado */
     border-radius: 30px;
     /*Borde redondo*/
     /*border: 2px solid #696969;*/
+
 }
 .item_barra:hover{
     background-color: #000;
     color: #fff;
+
 }
 
 
@@ -59,6 +61,12 @@ el cursor sombreado negro redondeado */
 
 }
 
+.inicio-img .botonCentro{
+    color: whitesmoke;
+    font-size: larger;
+
+}
+
 .inicio-navbar{
     width: 85%;
     margin: auto;
@@ -66,6 +74,7 @@ el cursor sombreado negro redondeado */
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .inicio-navbar ul li{
     list-style: none;
@@ -86,6 +95,7 @@ el cursor sombreado negro redondeado */
     position: absolute;
     left: 0;
     bottom: 0;
+    
 }
 
 .inicio-content{
@@ -115,6 +125,7 @@ button{
     cursor: pointer;
     position: relative;
     overflow: hidden;
+
 }
 
 /* BOTON: Al ponernos encima, el color se rellena a verde
