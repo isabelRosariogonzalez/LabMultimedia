@@ -15,12 +15,12 @@ html{
 
 .intro{
     padding: 25px;
+
 }
 
 .tipo_1,.tipo_2,.tipo_3 h2{
     padding: 25px;
 }
-
 
 /*--------------- Reproductor: Video - Playlist ----------------------------
 		EL VIDEO SALE A LA IZQUIERDA EN GRANDE Y A LA DERECHA SALE LA PLAYLIST
@@ -46,6 +46,7 @@ html{
     margin: 15px;
     align-items: baseline;
     color: var(--title-color);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container .main-video{
@@ -85,6 +86,7 @@ html{
 .video-playlist .videos{
     height: 70%;
     overflow-y: auto;
+    
 }
 
 .video-playlist .videos::-webkit-scrollbar {

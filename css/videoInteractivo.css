@@ -57,7 +57,7 @@
 */
 
 button {
-  border: 2px solid black;
+  border: 2px solid  #4BFFA5;
   color: white;
   border-radius: 20px;
   box-shadow: 1px 1px 1px black;
@@ -107,6 +107,16 @@ button:hover {
   height: auto;
 }
 
+.quiz_panel1 {
+
+  background: rgba(23, 23, 23, 0.2);
+  border-radius: 20px;
+  margin: 10px;
+  border: 2px solid black;
+  padding: 20px;
+  height: auto;
+}
+
 #feedback {
   background: rgba(23, 23, 23, 0.2);
   border-radius: 20px;
@@ -116,7 +126,96 @@ button:hover {
   height: auto;
 }
 
+#feedback1 {
+  background: rgba(23, 23, 23, 0.2);
+  border-radius: 20px;
+
+  border: 2px solid black;
+  width: 200px;
+  height: auto;
+}
+
+#feedback2 {
+  background: rgba(23, 23, 23, 0.2);
+  border-radius: 20px;
+
+  border: 2px solid black;
+  width: 200px;
+  height: auto;
+}
+
+#feedback3 {
+  background: rgba(23, 23, 23, 0.2);
+  border-radius: 20px;
+
+  border: 2px solid black;
+  width: 200px;
+  height: auto;
+}
+
+#feedback4 {
+  background: rgba(23, 23, 23, 0.2);
+  border-radius: 20px;
+
+  border: 2px solid black;
+  width: 200px;
+  height: auto;
+}
+
 #score {
+  border: 2px solid black;
+
+  background: rgba(255, 255, 255, .15);
+  border-radius: 20px;
+
+  color: white;
+  font-size: 24px;
+  float: right;
+  width: 200px;
+  margin: 3px;
+}
+
+#score1 {
+  border: 2px solid black;
+
+  background: rgba(255, 255, 255, .15);
+  border-radius: 20px;
+
+  color: white;
+  font-size: 24px;
+  float: right;
+  width: 200px;
+  margin: 3px;
+}
+
+#score2 {
+  border: 2px solid black;
+
+  background: rgba(255, 255, 255, .15);
+  border-radius: 20px;
+
+  color: white;
+  font-size: 24px;
+  float: right;
+  width: 200px;
+  margin: 3px;
+}
+
+#score3 {
+  border: 2px solid black;
+
+  background: rgba(255, 255, 255, .15);
+  border-radius: 20px;
+
+  color: white;
+  font-size: 24px;
+  float: right;
+  width: 200px;
+  margin: 3px;
+}
+
+
+#score4 {
   border: 2px solid black;
 
   background: rgba(255, 255, 255, .15);
