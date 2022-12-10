@@ -5,24 +5,25 @@ const main_video = document.querySelector('.main-video video');
 const main_video_title = document.querySelector('.main-video .title');
 const video_playlist = document.querySelector('.video-playlist .videos');
 
+
 // INTRODUCIMOS LOS VIDEOS MANUALMENTE
 let data = [
     {
         'id': 'a1',
-        'title': 'video de prueba',
-        'name': 'video de prueba.mp4',
-        'duration': '2:47',
+        'title': 'Body parts',
+        'name': 'bodyParts.mp4',
+        'duration': '1:30'
     },
     {
         'id': 'a2',
-        'title': 'Five Little Monkeys',
-        'name': 'FiveLittleMonkeys.mp4',
-        'duration': '2:45',
+        'title': 'Colors',
+        'name': 'Colors.mp4',
+        'duration': '2:01',
     },
     {
         'id': 'a3',
-        'title': 'video de prueba 3',
-        'name': 'video de prueba.mp4',
+        'title': 'numbers',
+        'name': 'numbers.mp4',
         'duration': '24:49',
     },
 
@@ -77,7 +78,7 @@ data.forEach((video, i) => {
     let video_element = `
                 <div class="video" data-id="${video.id}">
                     <img src="images/play.svg" alt="">
-                    <p>${i + 1 > 9 ? i + 1 : '0' + (i + 1)}. </p>
+                    <p>${i + 1 > 4 ? i + 1 : '0' + (i + 1)}. </p>
                     <h3 class="title">${video.title}</h3>
                     <p class="time">${video.duration}</p>
                 </div>
