@@ -1,55 +1,73 @@
 window.onload = init;
 
 var myvideo;
-let stopTimes = [20, 35, 30];
+let stopTimes = [10, 18, 22, 30, 38, 48, 60];
 
-  var question_panel;
-  var feedback_panel;
+var question_panel;
+var feedback_panel;
 
 function init(){
-  
-  myvideo = document.querySelector("#myvideo");
 
-  question_panel = document.querySelector("#question");
-  feedback_panel = document.querySelector("#feedback");
-  
-  //myvideo.ontimeupdate = displayTime;
-  myvideo.ontimeupdate = displayQuestion;
-  
+myvideo = document.querySelector("#myvideo");
+
+question_panel = document.querySelector("#question");
+feedback_panel = document.querySelector("#feedback");
+
+//myvideo.ontimeupdate = displayTime;
+myvideo.ontimeupdate = displayQuestion;
+
 }
 
 function playVideo() {
-  myvideo.play();
+myvideo.play();
 }
 function pauseVideo() {
-  myvideo.pause();
+myvideo.pause();
 }
 function stopVideo() {
-  myvideo.load();
+myvideo.load();
 }  
 function rewindVideo() {
-  myvideo.currentTime = 0;
+myvideo.currentTime = 0;
 }
 
 var question_index; // variable to store the index of the question in the array
 var formName; // form with the answer choices
 
 var questions = [
-  '¿Dónde se ha pegado el mono?',
-  '¿Cúantos monos saltan en la cama?',
-  '¿Quién llama al doctor?',
+  '¿Cómo se dice 2 en inglés?',
+  '¿Cómo se dice 9 en inglés?',
+  '¿Cómo se dice 10 en inglés?',
+  '¿Cómo se dice 5 en inglés?',
+  '¿Cómo se dice 1 en inglés?',
+  '¿Cómo se dice 7 en inglés?',
+  '¿Cómo se dice 6 en inglés?',
+
+
+
 ];
 
 var answers = [
-  'Head',
-  '4',
-  'Mommy',
+  '2',
+  '9',
+  '10',
+  '5',
+  '1',
+  '7',
+  '6',
+
 ];
 
 var choices = [
-  ['Head', 'Toe', 'Uncle'],
-  ['5', '4', '3'],
-  ['Mommy', 'Dad', 'Sister'],
+  ['One', 'Ten', 'Two'],
+  ['Three', 'Nine', 'Seven'],
+  ['Four', 'Five', 'Ten'],
+  ['Seven', 'One', 'Five'],
+  ['Two', 'One', 'Four'],
+  ['Seven', 'Three', 'One'],
+  ['Seven', 'Six', 'Eight'],
+
+
 ];
 
 var totalScore = 0;  //total score

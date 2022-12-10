@@ -1,55 +1,68 @@
 window.onload = init;
 
 var myvideo;
-let stopTimes = [20, 35, 30];
+let stopTimes = [22, 32, 66, 48, 88, 99];
 
-  var question_panel;
-  var feedback_panel;
+var question_panel;
+var feedback_panel;
 
 function init(){
-  
-  myvideo = document.querySelector("#myvideo");
 
-  question_panel = document.querySelector("#question");
-  feedback_panel = document.querySelector("#feedback");
-  
-  //myvideo.ontimeupdate = displayTime;
-  myvideo.ontimeupdate = displayQuestion;
-  
+myvideo = document.querySelector("#myvideo");
+
+question_panel = document.querySelector("#question");
+feedback_panel = document.querySelector("#feedback");
+
+//myvideo.ontimeupdate = displayTime;
+myvideo.ontimeupdate = displayQuestion;
+
 }
 
 function playVideo() {
-  myvideo.play();
+myvideo.play();
 }
 function pauseVideo() {
-  myvideo.pause();
+myvideo.pause();
 }
 function stopVideo() {
-  myvideo.load();
+myvideo.load();
 }  
 function rewindVideo() {
-  myvideo.currentTime = 0;
+myvideo.currentTime = 0;
 }
 
 var question_index; // variable to store the index of the question in the array
 var formName; // form with the answer choices
 
 var questions = [
-  '¿Dónde se ha pegado el mono?',
-  '¿Cúantos monos saltan en la cama?',
-  '¿Quién llama al doctor?',
+  '¿Cúal es el color favorito del niño?',
+  '¿Cúal es el color favorito de la niña?',
+  '¿Cúal es el color favorito de la niña?',
+  '¿Cúal es el color favorito de la niña?',
+  '¿Cúal es el color favorito del niño?',
+  '¿Cúal es el color favorito del niño?',
+
+
 ];
 
 var answers = [
-  'Head',
-  '4',
-  'Mommy',
+  'Blue',
+  'Red',
+  'Green',
+  'Yellow',
+  'Orange',
+  'Purple',
+
 ];
 
 var choices = [
-  ['Head', 'Toe', 'Uncle'],
-  ['5', '4', '3'],
-  ['Mommy', 'Dad', 'Sister'],
+  ['Green', 'Red', 'Blue'],
+  ['Red', 'Yellow', 'Orange'],
+  ['Blue', 'Green', 'Black'],
+  ['Orange', 'Purple', 'Yellow'],
+  ['Red', 'White', 'Orange'],
+  ['Blue', 'Purple', 'Yellow'],
+
 ];
 
 var totalScore = 0;  //total score

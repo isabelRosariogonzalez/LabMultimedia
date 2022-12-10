@@ -1,14 +1,14 @@
 window.onload = init;
 
 var myvideo;
-let stopTimes = [20, 35, 30];
+let stopTimes = [26, 32, 40, 48, 55];
 
   var question_panel;
   var feedback_panel;
 
 function init(){
   
-  myvideo = document.querySelector("#myvideo");
+  myvideo = document.querySelector("#videoFamilia");
 
   question_panel = document.querySelector("#question");
   feedback_panel = document.querySelector("#feedback");
@@ -35,21 +35,31 @@ var question_index; // variable to store the index of the question in the array
 var formName; // form with the answer choices
 
 var questions = [
-  '¿Dónde se ha pegado el mono?',
-  '¿Cúantos monos saltan en la cama?',
-  '¿Quién llama al doctor?',
+  '¿Cómo se le llama a los bebés en inglés?',
+  '¿Cómo se dice mamá en inglés?',
+  '¿Cómo se dice papá en inglés?',
+  '¿Cómo se dice abuela en inglés?',
+  '¿Cómo se dice abuelo en inglés?',
+
+
 ];
 
 var answers = [
-  'Head',
-  '4',
+  'Baby',
   'Mommy',
+  'Daddy',
+  'Grandma',
+  'Grandpa',
+
 ];
 
 var choices = [
-  ['Head', 'Toe', 'Uncle'],
-  ['5', '4', '3'],
-  ['Mommy', 'Dad', 'Sister'],
+  ['Baby', 'Daddy', 'Grandpa'],
+  ['Brother', 'Sister', 'Mommy'],
+  ['Mommy', 'Daddy', 'Baby'],
+  ['Grandma', 'Dad', 'Mommy'],
+  ['Sister', 'Grandpa', 'Brothe'],
+
 ];
 
 var totalScore = 0;  //total score

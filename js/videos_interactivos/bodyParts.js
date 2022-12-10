@@ -1,14 +1,14 @@
 window.onload = init;
 
 var myvideo;
-let stopTimes = [20, 35, 30];
+let stopTimes = [25, 33, 39, 48, 65, 73, 82];
 
   var question_panel;
   var feedback_panel;
 
 function init(){
   
-  myvideo = document.querySelector("#myvideo");
+  myvideo = document.querySelector("#videoCuerpo");
 
   question_panel = document.querySelector("#question");
   feedback_panel = document.querySelector("#feedback");
@@ -35,21 +35,36 @@ var question_index; // variable to store the index of the question in the array
 var formName; // form with the answer choices
 
 var questions = [
-  '¿Dónde se ha pegado el mono?',
+  '¿Qué usas para ver?',
   '¿Cúantos monos saltan en la cama?',
-  '¿Quién llama al doctor?',
+  '¿Con qué hueles?',
+  '¿Con qué comes?',
+  '¿Cómo se le dice al cuerpo en inglés?',
+  '¿Cómo se le dice a los hombros en inglés?',
+  '¿Cómo se le dice a los pies en inglés?',
+
+
 ];
 
 var answers = [
-  'Head',
-  '4',
-  'Mommy',
+  'Eyes',
+  'Hear',
+  'Nose',
+  'Mouth',
+  'Body',
+  'Shoulders',
+  'Toes',
+
 ];
 
 var choices = [
-  ['Head', 'Toe', 'Uncle'],
-  ['5', '4', '3'],
-  ['Mommy', 'Dad', 'Sister'],
+  ['Nose', 'Eyes', 'Hand'],
+  ['Look', 'Smell', 'Hear'],
+  ['Nose', 'Knee', 'Toe'],
+  ['Arm', 'Knee', 'Mouth'],
+  ['Hand', 'Body', 'Leg'],
+  ['Shoulders', 'Body', 'Nose'],
+  ['Nose', 'Knee', 'Toe'],
 ];
 
 var totalScore = 0;  //total score
@@ -64,7 +79,7 @@ function checkAnswer(theQuestion, theInput, radioGroup){
   var score_div = document.querySelector("#score");
 
   var val = getRadioVal(theInput, radioGroup);
-    // display value obtained
+  // display value obtained
   //alert(val);
   //fetch correct answer
   var correctAnswer = answers[theQuestion];
@@ -75,7 +90,7 @@ function checkAnswer(theQuestion, theInput, radioGroup){
     
     //update and display new score
     totalScore += pointsForCorrectAnswer;
-    score_div.innerHTML = " Puntos totales: " + totalScore;
+    score_div.innerHTML = "Total Points: " + totalScore;
 
     //clear the question
     question_panel.innerHTML = "";
