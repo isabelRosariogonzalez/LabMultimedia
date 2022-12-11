@@ -1,16 +1,17 @@
 /* Variables globales */
-:root{
-	/* COLORES MIOS */
-	--fondo: #3A3A3A;
+:root {
+    /* COLORES MIOS */
+    --fondo: #3A3A3A;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Calibri'; 
+body {
+    font-family: 'Calibri';
     background-color: #13141b;
     background-image: url(images/bg-image.png);
     background-size: cover;
@@ -18,14 +19,15 @@ body{
 
 
 /* BARRA NAVEGACION: Fondo verde y centrada */
-.barra_navegacion{
+.barra_navegacion {
     background-color: #4BFFA5;
     text-align: center;
     padding: 25px 0;
 }
+
 /* BARRA NAVEGACION: Letras grises, al pasar
 el cursor sombreado negro redondeado */
-.item_barra{
+.item_barra {
     display: inline-block;
     text-decoration: none;
     color: #696969;
@@ -40,7 +42,8 @@ el cursor sombreado negro redondeado */
     /*border: 2px solid #696969;*/
 
 }
-.item_barra:hover{
+
+.item_barra:hover {
     background-color: #000;
     color: #fff;
 
@@ -49,11 +52,11 @@ el cursor sombreado negro redondeado */
 
 
 /* INICIO: Imagen y titulo centrado */
-.inicio-img{
+.inicio-img {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),
-                    url(images/programa_musica_5184x3456.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+        url(images/programa_musica_5184x3456.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -61,17 +64,17 @@ el cursor sombreado negro redondeado */
     justify-content: center;
     align-items: center;
     color: #fff;
-    
+
 
 }
 
-.inicio-img .botonCentro{
+.inicio-img .botonCentro {
     color: whitesmoke;
     font-size: larger;
 
 }
 
-.inicio-navbar{
+.inicio-navbar {
     width: 85%;
     margin: auto;
     padding: 35% 0;
@@ -80,18 +83,21 @@ el cursor sombreado negro redondeado */
     justify-content: space-between;
 
 }
-.inicio-navbar ul li{
+
+.inicio-navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
-.inicio-navbar ul li a{
+
+.inicio-navbar ul li a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
 }
-.inicio-navbar ul li::after{
+
+.inicio-navbar ul li::after {
     content: '';
     height: 3px;
     width: 100%;
@@ -99,32 +105,34 @@ el cursor sombreado negro redondeado */
     position: absolute;
     left: 0;
     bottom: 0;
-    
+
 }
 
-.inicio-content{
+.inicio-content {
     width: 100%;
     position: absolute;
 }
+
 /* INICIO: Tamaño parrafo */
-.inicio-img p{
+.inicio-img p {
     font-size: 20px;
 }
+
 /* INICIO: Tamaño titulo (h1) con separación*/
-.inicio-img h1{
+.inicio-img h1 {
     font-size: 50px;
     padding: 20;
 }
 
 /* BOTON*/
-button{
+button {
     width: 200px;
     padding: 15px 0;
     text-align: center;
     margin: 20px 10px;
     border-radius: 30px;
     border: 2px solid #4BFFA5;
-    background: transparent; 
+    background: transparent;
     color: #fff;
     cursor: pointer;
     position: relative;
@@ -134,7 +142,7 @@ button{
 
 /* BOTON: Al ponernos encima, el color se rellena a verde
 con una transición de izquierda a derecha*/
-span{
+span {
     background: #4BFFA5;
     height: 100%;
     width: 0%;
@@ -147,55 +155,81 @@ span{
 }
 
 /* BOTON: Fondo transparente con marco verde*/
-button:hover span{
+button:hover span {
     width: 100%;
 }
-button:hover{
+
+button:hover {
     background-color: #4BFFA5;
     color: #696969;
 }
 
 
 /* PIE DE PÁGINA */
-.pie-pagina{
+.pie-pagina {
     width: 100%;
-    background-color: #373D3A;
+    /*373D3A*/
+    background-color: #262927;
     color: #fff;
 }
+
 /* Dividimos en dos columnas */
-.grupo-1{
+.grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
 }
+
 /* Imagenes centradas */
-.box figure{
+.box figure {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0%;
-}
-.box figure img{
-    align-items: flex-start;
-    width: 80px;
-    
-}
-.pie-pagina .grupo-2{
-    padding: auto;
-    text-align: center;
-    background-color: #282C2A;
+
 }
 
-.introduction-section{
+.box figure img {
+    width: 100px;
+}
+
+.box p {
+    font-size: 15px;
+}
+
+.box h2 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.pie-pagina .grupo-2 {
+    padding: auto;
+    text-align: center;
+    /*282C2A*/
+    background-color: #181A19;
+}
+
+@media screen and (max-width:800px) {
+    .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+
+.introduction-section {
     margin: 35px;
 }
 
-.uso-section{
+.uso-section {
     margin: 35px;
 }
