@@ -48,13 +48,13 @@ var questions = [
 ];
 
 var answers = [
-  '2',
-  '9',
-  '10',
-  '5',
-  '1',
-  '7',
-  '6',
+  'Two',
+  'Nine',
+  'Ten',
+  'Five',
+  'One',
+  'Seven',
+  'Six',
 
 ];
 
@@ -87,7 +87,7 @@ function checkAnswer(theQuestion, theInput, radioGroup){
   //fetch correct answer
   var correctAnswer = answers[theQuestion];
   if (correctAnswer === val){ 
-    feedback = val + " is CORRECT!";
+    feedback = val + " es CORRECTO!";
     feedback_div.style.backgroundColor = 'green';
     feedback_div.innerHTML = feedback;
     
@@ -108,11 +108,11 @@ function checkAnswer(theQuestion, theInput, radioGroup){
     playVideo();
 
   }else{
-    feedback = val + " is WRONG!";
+    feedback = val + " es INCORRECTO!";
     feedback_div.innerHTML = feedback;
     feedback_div.style.backgroundColor = 'red';
     totalScore -= pointsForIncorrectAnswer;
-    score_div.innerHTML = "Total Points: " + totalScore;
+    score_div.innerHTML = " Puntos totales: " + totalScore;
   }  
   
 }
