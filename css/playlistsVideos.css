@@ -258,9 +258,14 @@ span{
     cursor: pointer;
     margin: 5px;
     font-size: larger;
+    font-size: 15px;
   }
   
   button:hover {
     background-color: #4BFFA5 0.2;
-  
+  }
+
+  p {
+    margin: 5px;
+    font-size: 15px;
   }
