@@ -64,6 +64,7 @@ button {
   padding: 10px;
   cursor: pointer;
   margin: 5px;
+  font-size: 15px;
 }
 
 button:hover {
@@ -95,6 +96,10 @@ button:hover {
   /*background: #100c14;*/
 
   border-radius: 20px;
+}
+
+#question{
+  margin: 10px;
 }
 
 .quiz_panel {
@@ -235,6 +240,7 @@ h5 {
 
 p {
   margin: 5px;
+  font-size: 15px;
 }
 
 input {
