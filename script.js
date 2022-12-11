@@ -24,7 +24,7 @@ let data = [
         'id': 'a3',
         'title': 'Numbers',
         'name': 'numbers.mp4',
-        'duration': '24:49',
+        'duration': '1:15',
     },
 
     {
