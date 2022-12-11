@@ -32,6 +32,10 @@ el cursor sombreado negro redondeado */
     margin: 0 30px;
     padding: 5px 15px;
     border-radius: 30px;
+    font-size: 15px;
+
+    /* CAMBIAR TAMAÑO 
+    font-size: 24px;
     /*Borde redondo*/
     /*border: 2px solid #696969;*/
 
