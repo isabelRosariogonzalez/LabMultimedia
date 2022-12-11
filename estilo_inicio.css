@@ -49,6 +49,37 @@ el cursor sombreado negro redondeado */
 
 }
 
+#menu-icon{
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    .header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .nav a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 2%;
+        width: 270px;
+        height: 29vh;
+        background-color: aqua;
+    }
+}
 
 
 /* INICIO: Imagen y titulo centrado */
@@ -73,7 +104,7 @@ el cursor sombreado negro redondeado */
     font-size: larger;
 
 }
-
+/*
 .inicio-navbar {
     width: 85%;
     margin: auto;
@@ -107,7 +138,7 @@ el cursor sombreado negro redondeado */
     bottom: 0;
 
 }
-
+*/
 .inicio-content {
     width: 100%;
     position: absolute;
