@@ -23,7 +23,7 @@ let data = [
         'id': 'a3',
         'title': 'Party',
         'name': 'Party.mp4',
-        'duration': '2:01',
+        'duration': '2:11',
     },
 
     {
