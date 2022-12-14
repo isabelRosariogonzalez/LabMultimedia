@@ -1,0 +1,23 @@
+.figure1 {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin: 25px 0 0;
+    align-items: center;
+  }
+  .figure1 iframe,
+  .figure1 object,
+ .figure1 video,
+  .figure1 embed,
+  .figure1 div,
+  .figure1 .BrightcoveExperience {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70% !important; /* Override inline styles from BrightCove */
+    height: 80% !important; /* Override inline styles from BrightCove */
+    border: none;
+    display: inline;
+	margin-left: auto;
+	margin-right: auto
+  }
