@@ -1,15 +1,15 @@
-.body{
+.body {
     color: aliceblue;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     margin: 35px;
 }
 
 
-.informacion{
+.informacion {
     margin: 40px;
 }
 
-.informacion p{
+.informacion p {
     margin-bottom: 25px;
 }

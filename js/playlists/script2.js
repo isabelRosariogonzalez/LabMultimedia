@@ -38,7 +38,7 @@ let data = [
         'name': 'Happy.mp4',
         'duration': '1:37',
     },
-  
+
 
 ];
 

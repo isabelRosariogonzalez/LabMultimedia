@@ -1,24 +1,28 @@
 /* Variables globales */
-:root{
-	/* COLORES MIOS */
-	--title-color: #fff;
-	--negrita: #000;
+:root {
+    /* COLORES MIOS */
+    --title-color: #fff;
+    --negrita: #000;
 }
+
 /* Todas las letras en blanco */
-*{
+* {
     color: var(--title-color);
 }
+
 /* Al pulsar a un botón, baja hasta la sección */
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.intro{
+.intro {
     padding: 25px;
 
 }
 
-.tipo_1,.tipo_2,.tipo_3 h2{
+.tipo_1,
+.tipo_2,
+.tipo_3 h2 {
     padding: 25px;
 }
 
@@ -33,8 +37,8 @@ html{
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-	align-items: center;
-	gap: 1.5rem;
+    align-items: center;
+    gap: 1.5rem;
     margin-top: 20px;
     margin-bottom: 100px;
     padding: .5rem 1rem;
@@ -43,23 +47,25 @@ html{
 
 }
 
-.container .main-video, .video-playlist{
+.container .main-video,
+.video-playlist {
     align-self: flex-start;
 }
-.container .main-video .title{
+
+.container .main-video .title {
     margin: 15px;
     align-items: baseline;
     color: var(--title-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container .main-video{
-	height: auto;
-	width: 100%;
-	border-radius: 8px;
+.container .main-video {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
 }
 
-.container .video-playlist .title{
+.container .video-playlist .title {
     margin: 15px;
     align-items: baseline;
     color: var(--title-color);
@@ -73,7 +79,8 @@ html{
 }
 
 
-.main-video, .video-playlist {
+.main-video,
+.video-playlist {
     width: 100%;
     height: 30rem;
 }
@@ -84,14 +91,14 @@ html{
 
 
 
-.video-playlist > p {
+.video-playlist>p {
     padding: 1rem;
 }
 
-.video-playlist .videos{
+.video-playlist .videos {
     height: 70%;
     overflow-y: auto;
-    
+
 }
 
 .video-playlist .videos::-webkit-scrollbar {
@@ -140,10 +147,10 @@ html{
     left: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    
+
     width: 1.5rem;
     height: 1.5rem;
-    
+
     filter: invert(100%);
 }
 
@@ -152,7 +159,7 @@ html{
 }
 
 .video p {
-   margin-left: 2.5rem;
+    margin-left: 2.5rem;
 }
 
 .video h3 {
@@ -183,21 +190,21 @@ html{
     .container2 {
         grid-template-columns: 1fr;
     }
-} 
+}
 
 @media screen and (min-width: 600px) {
     .container2 {
-      position: relative;
+        position: relative;
     }
-      
-  .container2 .barra-seleccion .enlace-btn{
-    position: absolute;
-    width: 40%;
-  }
+
+    .container2 .barra-seleccion .enlace-btn {
+        position: absolute;
+        width: 40%;
+    }
 }
 
 /* BOTON*/
-.container2 .barra-seleccion .enlace-btn{
+.container2 .barra-seleccion .enlace-btn {
     width: 210px;
     padding: 15px 25px;
 
@@ -209,14 +216,14 @@ html{
     color: rgb(18, 17, 17);
     cursor: pointer;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
     background-color: #4BFFA5;
     text-decoration: none;
 }
 
 
 
-.enlace-btn:hover{
+.enlace-btn:hover {
     background-color: #000;
     color: #fff;
 }
@@ -224,7 +231,7 @@ html{
 
 /* BOTON: Al ponernos encima, el color se rellena a verde
 con una transición de izquierda a derecha*/
-span{
+span {
     background: #4BFFA5;
     height: 100%;
     width: 0%;
@@ -236,7 +243,7 @@ span{
     transition: 0.5s;
 }
 
-.barra-seleccion .enlace-btn{
+.barra-seleccion .enlace-btn {
     width: 30px;
     padding: 30px 30;
     text-align: center;
@@ -245,16 +252,16 @@ span{
 }
 
 
-.seleccion-botones{
+.seleccion-botones {
     background: rgba(23, 23, 23, 0.1);
     border-radius: 20px;
     box-shadow: 1px 1px 1px black;
     margin: 20px;
     border: 2px solid black;
     padding: 20px;
-  }
+}
 
-  button {
+button {
     border: 2px solid #4BFFA5;
     color: white;
     border-radius: 20px;
@@ -264,16 +271,16 @@ span{
     margin: 5px;
     font-size: larger;
     font-size: 15px;
-  }
-  
-  button:hover {
-    background-color: #4BFFA5 0.2;
-  }
+}
 
-  p {
+button:hover {
+    background-color: #4BFFA5 0.2;
+}
+
+p {
     margin: 5px;
     font-size: 15px;
-  }
+}
 
 
 
@@ -282,38 +289,42 @@ span{
         RESPONSIVE
 ***************************************/
 
-@media (max-width: 1480px){
-	header{
-		padding: 12px 2.5%;
-		transition: .1s;
-	}
+@media (max-width: 1480px) {
+    header {
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
 }
 
-@media screen and (max-width: 990px){
-	#menu-icon{
-		display: block;
-	}
-	.navlist{
-		position: absolute;
-		top: -1000px;
-		right: 0;
-		left: 0;
-		display: flex;
-		flex-direction: column;
-		background: #4BFFA5;
-		text-align: center;
-		transition: all .45s ease;
-	}
-	.navlist a{
-		display: block;
-		margin: 17px;
-		font-size: 20px;
-		color: #000;
-	}
-	.navlist a:hover{
-		color: #64F0A9;
-	}
-	.navlist.open{
-		top: 100%;
-	}
+@media screen and (max-width: 990px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navlist {
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #4BFFA5;
+        text-align: center;
+        transition: all .45s ease;
+    }
+
+    .navlist a {
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        color: #000;
+    }
+
+    .navlist a:hover {
+        color: #64F0A9;
+    }
+
+    .navlist.open {
+        top: 100%;
+    }
 }

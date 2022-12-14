@@ -34,8 +34,8 @@ function rewindVideo() {
   myvideo.currentTime = 0;
 }
 
-var question_index; // variable to store the index of the question in the array
-var formName; // form with the answer choices
+var question_index; // variable para almacenar el índice de la pregunta en el array
+var formName; // formulario con las opciones de respuesta
 
 var questions = [
   '¿Dónde se ha pegado el mono?',
