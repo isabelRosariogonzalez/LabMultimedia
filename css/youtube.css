@@ -30,5 +30,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 25px;
+  margin: 25px 200px;
+
+  background: rgba(255, 255, 255, .15);
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+.barra-busqueda input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 15px 10px;
+  font-size: 15px;
+}
+
+#cargar {
+  background: rgba(255, 255, 255, .2);
+  border-radius: 60px;
+  cursor: pointer;
+  max-width: 120px;
 }
