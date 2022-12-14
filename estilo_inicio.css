@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -124,6 +125,7 @@ header{
 .inicio-img .botonCentro {
     color: whitesmoke;
     font-size: larger;
+    text-decoration: none;
 
 }
 
