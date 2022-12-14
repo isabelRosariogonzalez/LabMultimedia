@@ -43,12 +43,13 @@ header{
     text-decoration: none;
 	font-size: 17px;
 	font-weight: 500;
-	margin: 0 25px;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
 }
 .navlist a:hover{
 	background-color: #000;
     color: #fff;
-    border: 2px solid #000;
     border-radius: 15px;
 }
 
@@ -70,7 +71,7 @@ header{
 	}
 }
 
-@media (max-width: 840px){
+@media (max-width: 990px){
 	#menu-icon{
 		display: block;
 	}
