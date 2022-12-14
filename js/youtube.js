@@ -1,3 +1,8 @@
+/******************************************************
+ *  FUNCION: Youtube URL Parser
+ *  Extrae y devuelve el ID, la hora de inicio y los 
+ *  parámetros de video relacionados con el URL de YouTube.
+ *****************************************************/
 function youtubeUrlParser(url) {
 
     var timeToSec = function (str) {

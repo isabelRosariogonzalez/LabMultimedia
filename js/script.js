@@ -1,4 +1,8 @@
-/* MENU DESPLEGABLE */
+/******************************************************
+ *  MENU DESPLEGABLE
+ *  Al hacer click en el icono del menu, mostrara
+ *  cada item de la barra de navegacion
+ *****************************************************/
 const header = document.querySelector("header");
 
 let menu = document.querySelector('#menu-icon');
