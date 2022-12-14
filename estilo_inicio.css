@@ -17,8 +17,93 @@ body {
     background-size: cover;
 }
 
+/*WEB PERSONAL*/
 
-/* BARRA NAVEGACION: Fondo verde y centrada */
+header{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	right: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+	border-bottom: 1px solid transparent;
+    background-color: #4BFFA5;
+    text-align: center;
+	transition: all .45s ease;
+}
+
+.navlist{
+	display: flex;
+}
+
+.navlist a{
+	color: #3B3B3B;
+    text-decoration: none;
+	font-size: 17px;
+	font-weight: 500;
+	margin: 0 25px;
+}
+.navlist a:hover{
+	background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+
+
+
+#menu-icon{
+	font-size: 35px;
+	color: #000;
+	z-index: 10001;
+	cursor: pointer;
+	margin-left: 25px;
+	display: none;
+}
+
+@media (max-width: 1480px){
+	header{
+		padding: 12px 2.5%;
+		transition: .1s;
+	}
+}
+
+@media (max-width: 840px){
+	#menu-icon{
+		display: block;
+	}
+	.navlist{
+		position: absolute;
+		top: -1000px;
+		right: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		background: #4BFFA5;
+		text-align: center;
+		transition: all .45s ease;
+	}
+	.navlist a{
+		display: block;
+		margin: 17px;
+		font-size: 20px;
+		color: #000;
+	}
+	.navlist a:hover{
+		color: #64F0A9;
+	}
+	.navlist.open{
+		top: 100%;
+	}
+}
+
+
+/**************************************
+LO MIOOOOOOOOOOO
+***************************************
+/* BARRA NAVEGACION: Fondo verde y centrada 
 .barra_navegacion {
     background-color: #4BFFA5;
     text-align: center;
@@ -26,7 +111,7 @@ body {
 }
 
 /* BARRA NAVEGACION: Letras grises, al pasar
-el cursor sombreado negro redondeado */
+el cursor sombreado negro redondeado 
 .item_barra {
     display: inline-block;
     text-decoration: none;
@@ -39,7 +124,7 @@ el cursor sombreado negro redondeado */
     /* CAMBIAR TAMAÑO 
     font-size: 24px;
     /*Borde redondo*/
-    /*border: 2px solid #696969;*/
+    /*border: 2px solid #696969;
 
 }
 
@@ -82,7 +167,9 @@ el cursor sombreado negro redondeado */
         background-color: aqua;
     }
 }
-
+/**************************************
+LO MIOOOOOOOOOOO
+***************************************/
 
 
 
