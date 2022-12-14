@@ -22,6 +22,8 @@ html{
     padding: 25px;
 }
 
+
+
 /*--------------- Reproductor: Video - Playlist ----------------------------
 		EL VIDEO SALE A LA IZQUIERDA EN GRANDE Y A LA DERECHA SALE LA PLAYLIST
 		CON UNA BARRA PARA SUBIR Y BAJAR 
@@ -61,12 +63,13 @@ html{
     color: var(--title-color);
 }
 
-
+/*
 @media screen and (max-width: 990px) {
     .container {
         grid-template-columns: 1fr;
     }
 }
+*/
 
 .main-video, .video-playlist {
     width: 100%;
@@ -174,11 +177,11 @@ html{
     text-transform: capitalize;
 }
 
-/* @media screen and (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
     .container2 {
         grid-template-columns: 1fr;
     }
-} */
+} 
 
 @media screen and (min-width: 600px) {
     .container2 {
@@ -269,3 +272,46 @@ span{
     margin: 5px;
     font-size: 15px;
   }
+
+
+
+
+/***************************************
+        RESPONSIVE
+***************************************/
+
+@media (max-width: 1480px){
+	header{
+		padding: 12px 2.5%;
+		transition: .1s;
+	}
+}
+
+@media screen and (max-width: 990px){
+	#menu-icon{
+		display: block;
+	}
+	.navlist{
+		position: absolute;
+		top: -1000px;
+		right: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		background: #4BFFA5;
+		text-align: center;
+		transition: all .45s ease;
+	}
+	.navlist a{
+		display: block;
+		margin: 17px;
+		font-size: 20px;
+		color: #000;
+	}
+	.navlist a:hover{
+		color: #64F0A9;
+	}
+	.navlist.open{
+		top: 100%;
+	}
+}
