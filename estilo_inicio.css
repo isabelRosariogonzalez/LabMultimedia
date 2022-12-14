@@ -17,7 +17,6 @@ body {
     background-size: cover;
 }
 
-/*WEB PERSONAL*/
 
 header{
 	position: absolute;
@@ -101,76 +100,7 @@ header{
 }
 
 
-/**************************************
-LO MIOOOOOOOOOOO
-***************************************
-/* BARRA NAVEGACION: Fondo verde y centrada 
-.barra_navegacion {
-    background-color: #4BFFA5;
-    text-align: center;
-    padding: 25px 0;
-}
 
-/* BARRA NAVEGACION: Letras grises, al pasar
-el cursor sombreado negro redondeado 
-.item_barra {
-    display: inline-block;
-    text-decoration: none;
-    color: #696969;
-    margin: 0 30px;
-    padding: 5px 15px;
-    border-radius: 30px;
-    font-size: 15px;
-
-    /* CAMBIAR TAMAÑO 
-    font-size: 24px;
-    /*Borde redondo*/
-    /*border: 2px solid #696969;
-
-}
-
-.item_barra:hover {
-    background-color: #000;
-    color: #fff;
-
-}
-
-#menu-icon {
-    font-size: 35px;
-    cursor: pointer;
-    z-index: 10001;
-    display: none;
-}
-
-@media (max-width: 1280px) {
-    .header {
-        padding: 14px 2%;
-        transition: .2s;
-    }
-
-    .nav a {
-        padding: 5px 0;
-        margin: 0px 20px;
-    }
-}
-
-@media (max-width: 1090px) {
-    #menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        right: 2%;
-        width: 270px;
-        height: 29vh;
-        background-color: aqua;
-    }
-}
-/**************************************
-LO MIOOOOOOOOOOO
-***************************************/
 
 
 
@@ -197,41 +127,7 @@ LO MIOOOOOOOOOOO
 
 }
 
-/*
-.inicio-navbar {
-    width: 85%;
-    margin: auto;
-    padding: 35% 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-}
-
-.inicio-navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-
-.inicio-navbar ul li a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.inicio-navbar ul li::after {
-    content: '';
-    height: 3px;
-    width: 100%;
-    background: #4BFFA5;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-}
-*/
 .inicio-content {
     width: 100%;
     position: absolute;
