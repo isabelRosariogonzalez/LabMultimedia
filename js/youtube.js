@@ -20,9 +20,9 @@ function youtubeUrlParser(url) {
         showRelated: videoShowRelated
     };
 
-}; // youtubeParser();
+}; 
 
-// Demo-only Stuff
+
 var input = document.querySelector('input[type="text"]');
 input.focus();
 var button = document.querySelector('input[type="button"]');
