@@ -5,28 +5,28 @@
     <title>Search Bar</title>
 	<link rel="stylesheet" href="estilo_inicio.css">
 	<link rel="stylesheet" href="css/buscador.css">
-	<script>
-		const f = document.getElementById('form');
-		const q = document.getElementById('query');
-		const google = '';
-		const site = 'pagedart.com';
+	<!-- <script> 
+		// const f = document.getElementById('form');
+		// const q = document.getElementById('query');
+		// const google = '';
+		// const site = 'pagedart.com';
 
-		function submitted(event) {
-		event.preventDefault();
-		const url = q.value;
-		// const win = window.open(url, '_blank');
-		// win.focus();
-		// <a href="+url+"></a>
-		<div class="container_interactivo">
-            <div class="ver-video">
-				<iframe width="560" height="315" src="url" frameborder="0" allowfullscreen></iframe>      
-			</div>
-		</div>
+		// function submitted(event) {
+		// event.preventDefault();
+		// const url = q.value;
+		// // const win = window.open(url, '_blank');
+		// // win.focus();
+		// // <a href="+url+"></a>
+		// // <div class="container_interactivo">
+        // //     <div class="ver-video">
+		// // 		<iframe width="560" height="315" src="url" frameborder="0" allowfullscreen></iframe>      
+		// // 	</div>
+		// // </div>
 		
-		}
+		// }
 
-		f.addEventListener('submit', submitted);
-	</script>
+		// f.addEventListener('submit', submitted);
+	// </script> -->
 
 	</head>
 	<body>
@@ -42,12 +42,23 @@
 			<style type="text/css"> BODY{ font-family: verdana; } </style>
 		</header>
 		
-	<form role="search" id="form">
-		<input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
-		<button>
-		<svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-		</button>
-	</form>
+		<form role="search" id="form">
+			<input type="search" id="query" name="q" placeholder="Introduzca un link" aria-label="">
+			<button>
+			<svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+			</button>
+		</form>
+		<section id="cuerpo">
+
+			<div class="container_interactivo">
+				<div class="ver-video">
+					<video id="videoCuerpo" src="url" controls muted></video>
+				</div>	
+				<script src="buscador.js"></script>
+			</div>
+
+		</section>
+	
 	
 	<footer class="pie-pagina">
 		<div class="grupo-1">
