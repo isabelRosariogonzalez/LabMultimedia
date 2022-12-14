@@ -12,6 +12,9 @@ function init(){
 
   question_panel = document.querySelector("#question");
   feedback_panel = document.querySelector("#feedback");
+  correctAnswer = document.querySelector("#correctAnswer");
+
+
   
   //myvideo.ontimeupdate = displayTime;
   myvideo.ontimeupdate = displayQuestion;
@@ -55,6 +58,8 @@ var choices = [
 var totalScore = 0;  //total score
 var pointsForCorrectAnswer = 10;
 var pointsForIncorrectAnswer = 5;
+// var correctAnswers = 0;
+// var incorrectAnswers = 0;
 
 
 function checkAnswer(theQuestion, theInput, radioGroup){
@@ -62,6 +67,7 @@ function checkAnswer(theQuestion, theInput, radioGroup){
   var _feedback = "";
   var feedback_div = document.querySelector("#feedback");
   var score_div = document.querySelector("#score");
+  var correctAnswer = document.querySelector("#correctAnswer");
 
   var val = getRadioVal(theInput, radioGroup);
     // display value obtained
@@ -74,6 +80,7 @@ function checkAnswer(theQuestion, theInput, radioGroup){
     feedback_div.innerHTML = feedback;
     
     //update and display new score
+    correctAnswer++;  
     totalScore += pointsForCorrectAnswer;
     score_div.innerHTML = " Puntos totales: " + totalScore;
 
@@ -93,7 +100,10 @@ function checkAnswer(theQuestion, theInput, radioGroup){
     feedback = val + " es INCORRECTO!";
     feedback_div.innerHTML = feedback;
     feedback_div.style.backgroundColor = 'red';
+    incorrectAnswers++;
+    if (totalScore > 0) {
     totalScore -= pointsForIncorrectAnswer;
+    }
     score_div.innerHTML = " Puntos totales: " + totalScore;
   }  
   

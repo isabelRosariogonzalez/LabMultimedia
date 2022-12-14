@@ -73,7 +73,39 @@ var choices = [
 var totalScore = 0;  //total score
 var pointsForCorrectAnswer = 10;
 var pointsForIncorrectAnswer = 5;
+var correctAnswers = 0;
+var incorrectAnswers = 0;
 
+const $grafica = document.querySelector("#grafica");
+// Las etiquetas son las que van en el eje X. 
+const etiquetas = ["Errores", "Aciertos"]
+// Podemos tener varios conjuntos de datos. Comencemos con uno
+const datosVentas2020 = {
+    label: "Número de aciertos y errores",
+    data: incorrectAnswers, correctAnswers, // La data es un arreglo que debe tener la misma cantidad de valores que la cantidad de etiquetas
+    backgroundColor: 'rgba(54, 162, 235, 0.2)', // Color de fondo
+    borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
+    borderWidth: 1,// Ancho del borde
+};
+new Chart($grafica, {
+    type: 'bar',// Tipo de gráfica
+    data: {
+        labels: etiquetas,
+        datasets: [
+            datosVentas2020,
+            // Aquí más datos...
+        ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }],
+        },
+    }
+  });
 
 function checkAnswer(theQuestion, theInput, radioGroup){
 
@@ -111,7 +143,9 @@ function checkAnswer(theQuestion, theInput, radioGroup){
     feedback = val + " es INCORRECTO!";
     feedback_div.innerHTML = feedback;
     feedback_div.style.backgroundColor = 'red';
-    totalScore -= pointsForIncorrectAnswer;
+    if (totalScore > 0) {
+      totalScore -= pointsForIncorrectAnswer;
+      }
     score_div.innerHTML = " Puntos totales: " + totalScore;
   }  
   

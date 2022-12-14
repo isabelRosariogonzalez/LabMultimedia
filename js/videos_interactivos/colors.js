@@ -106,7 +106,9 @@ function checkAnswer(theQuestion, theInput, radioGroup){
     feedback = val + " es INCORRECTO!";
     feedback_div.innerHTML = feedback;
     feedback_div.style.backgroundColor = 'red';
-    totalScore -= pointsForIncorrectAnswer;
+    if (totalScore > 0) {
+      totalScore -= pointsForIncorrectAnswer;
+      }
     score_div.innerHTML = " Puntos totales: " + totalScore;
   }  
   
